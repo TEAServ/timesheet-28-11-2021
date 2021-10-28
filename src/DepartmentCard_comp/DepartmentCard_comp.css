@@ -1,0 +1,157 @@
+.depCardCont
+{
+    overflow: hidden;
+    max-width: 250px;
+    max-height: 250px;
+}
+.DepCard
+{
+    /* display: inline-block; */
+
+    border-radius: 5px;
+    height: 75px;
+    margin: 30px 110px;
+    padding-top: 14px;
+    position: relative;
+    top: -36px;
+    background-color: #e6e6e6;
+    
+
+ 
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;  
+
+overflow: hidden;
+border: 2.5px solid black;
+
+}
+
+.redss
+{
+    background-color: #f12a2a;
+    
+}
+
+.orangess
+{
+    background-color: #fd7e14;
+    
+}
+
+.yellowss
+{
+    background-color: #ffda07;
+    
+}
+
+.greenss
+{
+    background-color: #51e777;
+    
+}
+
+.bluess
+{
+    background-color: #5168e7;
+    
+}
+
+.lightbluess
+{
+    background-color: #51e2e7;
+    
+}
+
+.purpless
+{
+    background-color: #ab51e7;
+    
+}
+
+.blackss
+{
+    background-color: #242424;
+    
+}
+
+.projNameCard
+{
+
+    text-align: center;
+
+    
+}
+.btnBorder
+{
+    border: 2px solid white;
+}
+
+
+.projCardPanel{opacity: 0; transition: all 0.5s; background-color: rgba(75, 75, 75, 0.418);  position: relative; display: flex; width: 100%; height: 75px; justify-content: center; top: -70px; padding-top: 15px; padding-bottom: 15px;}
+.projCardPanel:hover{ opacity: 1;}
+
+.AAAAAA
+{
+    /* display: inline-block; */
+    margin: 30px 50px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.AAAAAA > div
+{
+    margin: 0px;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding-top: 0px;
+}
+.AAAAAA > div > h1
+{
+
+    /* position:absolute; */
+    position: relative;
+    top: 40%;
+}
+
+.AAAAAA > div > div
+{
+    /* position:absolute;
+    top: 0px; */
+    position: relative;
+    top: -16.65%;
+    left: -2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 250px;
+    height: 100%;
+    padding: 0px;
+}
+.AAAAAA > div > div > button
+{
+   
+    position: relative;
+    top: -1px;
+    height: 50px;
+}
+
+
+
+/* common */
+.ribbons {
+display: inline-block;
+width: 200px !important;
+height: 30px !important;
+
+position: relative;
+top: 45px;
+left: -40px;
+transform: rotate(-45deg)  ;
+z-index: 1;
+box-shadow: 0px 2px 5px black;
+  }

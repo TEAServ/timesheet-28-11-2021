@@ -1,0 +1,230 @@
+.depRippon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #e76f51;
+    padding-top: 100px;
+    border-bottom: 3px solid black;
+}
+
+.depName
+{
+    color: #e76f51;
+}
+.red
+{
+    color: #f12a2a;
+    
+}
+.redred
+{
+    background-color: #f12a2a;
+    
+}
+.orange
+{
+    color: #fd7e14;
+    
+}
+.orangeorange
+{
+    background-color: #fd7e14;
+    
+}
+.yellow
+{
+    color: #ffda07;
+    
+}
+.yellowyellow
+{
+    background-color: #ffda07;
+    
+}
+.green
+{
+    color: #51e777;
+    
+}
+.greengreen
+{
+    background-color: #51e777;
+    
+}
+.blue
+{
+    color: #5168e7;
+    
+}
+.blueblue
+{
+    background-color: #5168e7;
+    
+}
+.lightblue
+{
+    color: #51e2e7;
+    
+}
+.lightbluelightblue
+{
+    background-color: #51e2e7;
+    
+}
+.purple
+{
+    color: #ab51e7;
+    
+}
+.purplepurple
+{
+    background-color: #ab51e7;
+    
+}
+.black
+{
+    color: #242424;
+    
+}
+.blackblack
+{
+    background-color: #242424;
+    
+}
+
+
+.avatarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    z-index: 9;
+}
+.changePhoto
+{
+    background-color: rgba(31, 31, 31, 0.603);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    opacity:0;
+    transition: all 0.5s;
+}
+
+
+.avatarContainer:hover .changePhoto{
+    opacity:1;
+
+}
+.rightProfileSec
+{
+    text-align: right;
+}
+.profileContainer
+{
+    position: relative;
+    /* z-index: -1; */
+}
+.vacationBtn
+{
+    margin-top: 100px;
+    font-size: large;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+.adminSwitch
+{
+    position: absolute;
+    left: 10px;
+    
+}
+.ProfileUserName{display: inline;}
+.ProfileUserDep{display: inline-block; width: 100%; text-align: center;}
+.leftContentContainer
+{
+    margin-top: 30px;
+    display: flex;
+    width: fit-content;
+    
+    flex-direction: column;
+    align-items: center;
+
+}
+.rightContentContainer
+{
+    margin-top: 30px;
+    display: inline-block;
+    width: fit-content;
+    text-align: left;
+    
+    
+    
+}
+.greenHours
+{
+    color: rgb(31, 231, 31);
+}
+.cc
+{
+    font-size: 195px;
+    color: rgba(255, 255, 255, 0.479);
+    position: absolute;
+    top: -60px;
+}
+.profileBtns{text-align: right;}
+@media screen and (max-width: 450px) 
+{
+
+.cc
+{
+top: 10px;
+font-size: 58px;
+}
+.depRippon{margin-bottom: 80px;}
+.leftContentContainer{text-align: center;}
+.leftProfile{display: flex; justify-content: center;}
+.rightProfileSec{display: flex; justify-content: center; text-align: center;}
+.vacationBtn{margin-top: 20px; font-size: initial;}
+.profileBtns{text-align: center;}
+    
+
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+    .pickerForm{display: none;}
+
+
+
+
+    .lastUpdate{color:rgb(172, 172, 172);}

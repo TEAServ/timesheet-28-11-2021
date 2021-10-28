@@ -1,0 +1,259 @@
+.defaultnav
+{
+    
+    align-self: center;
+    /* width: 90%; */
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0px;
+    background-color: rgb(240, 240, 240) !important;
+    transition: margin 0.5s,  padding 0.5s;
+    border-radius: 3px;
+
+    
+}
+.navbar-brandd{padding: 0px; margin: 0px;}
+.sticky
+{
+    
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 0px;
+    /* -------------------------------------- */
+
+    /* background-color: blue !important; */
+}
+.name
+{
+    margin-top: 65px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 600;
+    color: white;
+    text-shadow:   -1px -1px 0 #000,  
+                   1px -1px 0 #000,
+                   -1px 1px 0 #000,
+                   1px 1px 0 #000;
+}
+
+.title
+{
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+
+}
+.sep
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block; border: 1px solid rgba(165, 165, 165, 0.349); height: 80%;
+}
+.sep2
+{
+    display: inline-block; border: 1px solid rgba(165, 165, 165, 0.349);
+    width: 100%;
+
+}
+.navLinkk
+{
+   padding-left: 15px;
+   padding-right: 15px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   transition: border 0.1s;
+   
+}
+.navLinkk:hover
+{border-bottom: 3px solid rgb(10, 178, 190);
+
+
+}
+
+.navLink
+{
+    color: black !important;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.1s;
+}
+.navLink:hover
+{color: rgb(10, 178, 190) !important;
+
+
+}
+.navBtn
+{
+color: white;
+height: 50px;
+position:absolute;
+right: 0px;
+margin-right: 0%;
+transition: margin 0.5s;
+font-size: 18px;
+font-weight: 400;
+
+}
+.navBtnn
+{ 
+    margin-right: 2%;
+
+}
+.BtnCouble
+{
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+.BtnCoubleCont
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+.vidCont{display: flex; justify-content: center; height: 600px; width: 100%; background-color: rgba(63, 63, 63, 0.384); overflow: hidden; position: absolute; top: 0px; z-index: 1;}
+.headerVid{ height: 1080px; width: 1920px; position: relative; left: 0px; top: -50px;}
+.mobNav
+{
+    background-color: white;
+    display: none;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    border-bottom: 2px solid black;
+
+
+}
+.bars{position: absolute; left: 0px; margin-left: 10px;}
+.bars:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+.modal.left .modal-dialog {
+    position:fixed;
+    left: 0;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+-o-transform: translate3d(0%, 0, 0);
+transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+height: 100%;
+overflow-y: auto;
+}
+
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+border-radius: 0;
+border: none;
+}
+
+.modalBody
+{
+padding: 0px;
+}
+.namee
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 9; 
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 600;
+    color: white;
+   
+}
+.sideContent
+{
+color: white;
+margin-left: 20px;
+font-size: 22px;
+font-weight: 500;
+}
+
+.sideContent:active
+{
+color: orange;
+}
+.modall
+{
+background-color: rgb(39, 39, 56);
+}
+.logo{width:50px;}
+
+
+
+
+
+@media screen and (max-width: 1080px) 
+{
+
+    .BtnCoubleCont{
+        
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 750px) 
+{
+    .defaultnav{display: none;}
+    .mobNav{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    }
+    .name
+    {
+        margin-top: 165px;
+        font-size: 13vw;
+    }
+    .namee{font-size: 13vw;}
+    .title{font-size: 5vw;}
+    .BtnCoubleCont{
+        
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .vidCont{top: 50px;}
+    
+
+}
+.makeItFront
+{
+    
+   
+    z-index: 1050 !important;
+}

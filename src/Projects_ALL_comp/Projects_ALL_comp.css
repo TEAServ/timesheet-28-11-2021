@@ -1,0 +1,54 @@
+.projCardsContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+.AAAAA
+{
+    /* display: inline-block; */
+    margin: 30px 50px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.AAAAA > div
+{
+    margin: 0px;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding-top: 0px;
+}
+.AAAAA > div > h1
+{
+
+    /* position:absolute; */
+    position: relative;
+    top: 40%;
+}
+
+.AAAAA > div > div
+{
+    /* position:absolute;
+    top: 0px; */
+    position: relative;
+    top: -33.5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 250px;
+    height: 120%;
+    padding: 0px;
+}
+.AAAAA > div > div > button
+{
+   
+    position: relative;
+    top: -1px;
+    height: 50px;
+}

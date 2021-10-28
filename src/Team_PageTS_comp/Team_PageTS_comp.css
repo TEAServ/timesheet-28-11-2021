@@ -1,0 +1,62 @@
+
+.TEAM_projRippon_cont
+{
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projNameRippon
+{
+    font-size: 195px;
+    color: rgba(255, 255, 255, 0.808);
+    position: absolute;
+    /* top: -40px; */
+}
+.TEAM_projRippon_cont:hover .projNameRippon
+{
+    
+    color: rgba(104, 104, 104, 0.74);
+    
+    /* top: -40px; */
+}
+.TEAM_projRippon_cont:hover 
+{
+    cursor: pointer;
+   
+    
+    /* top: -40px; */
+}
+.TEAM_projRippon{
+    /* background-image: url("https://i.ibb.co/dGvQZPK/sdffi.jpg"); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 300px;
+    background-color: #e76f51;
+    padding-top: 100px;
+    border-bottom: 10px solid black;
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.deleteTeamBtnsCont
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+
+}
+.dltBtn
+{
+    display: inline-block;
+    width: 150px;
+}

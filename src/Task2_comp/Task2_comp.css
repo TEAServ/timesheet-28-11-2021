@@ -1,0 +1,125 @@
+.vacation{ background-color: rgb(0, 0, 255) !important;}
+.taskCellDisabled{border-top: 1px solid rgb(0, 0, 0);border-bottom: 1px solid rgb(0, 0, 0); height: 50px; overflow: hidden; text-align: left; padding: 0px; display: flex; align-items: center; justify-content: center; background-color: rgba(169, 169, 169, 0.336); }
+.taskCell{border: 1px solid black; height: 50px; overflow: hidden; text-align: left; padding: 0px; display: flex; align-items: center; justify-content: center; }
+.taskMainCell{ height: 50px; }
+.tasksTable
+{
+    
+    box-shadow: 3px 3px 10px rgba(61, 61, 61, 0.473);
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: url("https://i.ibb.co/dsNdndv/sdffi.png");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.tasksTable ::-webkit-scrollbar {
+
+width: 0px;
+
+
+}
+/* .tasksTable ::-moz-scrollbar{width: 5px;} */
+
+/* Track */
+.tasksTable ::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+.tasksTable ::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 2.5px;
+}
+
+/* Handle on hover */
+.tasksTable ::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.tasksComps
+{
+    background-color: rgba(0, 0, 255, 0);
+    /* display: inline-block;
+    width: 100%; */
+
+    height: 290px;
+    /* overflow-y: overlay; */
+    overflow-y: scroll;
+
+    scrollbar-width: thin;
+    
+    
+    
+}
+.fa-exclamation-circle{color: red;}
+.fa-check-circle{color: green;}
+.fa-cog{color: rgb(73, 73, 73); transition: all 1s;}
+.diss{color: rgba(73, 73, 73, 0.288); }
+.fa-cog:hover
+{
+    cursor: pointer;
+    transform: rotate(180deg);
+    }
+.fa-save{transition: all 0.2s;}
+.fa-save:hover{cursor: pointer;  color:rgb(79, 241, 87); text-shadow: 0px 0px 1px #00ff00;}
+.fa-check{transition: all 0.2s;}
+.fa-check:hover{cursor: pointer;  color:rgb(79, 241, 87); text-shadow: 0px 0px 1px #00ff00;}
+.fa-trash{transition: all 0.2s;}
+.fa-trash:hover{cursor: pointer;  color:rgb(241, 79, 79); text-shadow: 0px 0px 1px #ff0000;}
+.fa-times{transition: all 0.2s;}
+.fa-times:hover{cursor: pointer;  color:rgb(241, 79, 79); text-shadow: 0px 0px 1px #ff0000;}
+.fa-backspace{transition: all 0.2s;}
+.fa-backspace:hover{cursor: pointer;  color:rgb(56, 53, 184); text-shadow: 0px 0px 2px #0051ff;}
+
+    .TaskRecord
+    {
+        margin-top: 5px;
+       
+        
+    }
+    .TaskRecordEdit{
+        margin-top: 5px;
+
+        border-bottom:1px solid rgb(184, 197, 64);
+        border-top:1px solid rgb(184, 197, 64); ;
+        box-shadow: 0px 0px 10px rgb(217, 255, 0);
+        background-color: rgba(255, 251, 0, 0.356);
+    }
+    .overtime{background-color: rgba(70, 185, 47, 0.315) !important;}
+    .overtimeCell{background-color: rgba(70, 185, 47, 0.315);}
+    .redCell{background-color: rgba(219, 33, 8, 0.315);}
+    .tasksTableHeader{border-bottom: 2px solid black; background-color: rgba(169, 169, 169, 0.342); box-shadow: 0px 2px 6px rgb(48, 48, 48);}
+    .EditBtn{position: absolute; opacity: 0; width: 100%; height: 100%;}
+    .EditBtnn{position: absolute; opacity:0.5; width: 100%; height: 100%;}
+    .ProjectCell
+    {
+        background-image: url("https://i.ibb.co/dGvQZPK/sdffi.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .ProjectName{background-color: rgba(255, 255, 255, 0.699); border-radius: 5px;}
+    .plusBtn{padding-top: 5px; transition: all 0.2s;}
+    .plusBtn:hover{color: green; cursor: pointer; transform: scale(1.1);}
+    .newTaskModalBdy{display: inline-block; height: 50vh; overflow: hidden;}
+
+
+
+    .projNameCard
+    {
+
+        text-align: center;
+
+        
+    }
+    .projNamee{background-color: rgba(255, 255, 255, 0.644); border-radius: 10px;}
+    
+    .projCardPanel{opacity: 0; transition: all 0.5s; background-color: rgba(75, 75, 75, 0.418);  position: relative; display: flex; width: 100%; height: 75px; justify-content: center; top: -70px; padding-top: 15px; padding-bottom: 15px;}
+    .projCardPanel:hover{ opacity: 1;}
+    .projectCardsContainer{height: 75%; overflow-y: scroll;}
+    .projectTypeTitle{display: inline-block;}
+    .dropdown{display: inline-block;}

@@ -1,0 +1,205 @@
+.colorBtnsContContCont
+{
+    display: inline-block;
+    width: 80%;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.colorBtnsContCont
+{
+    display: inline-block;
+    
+    
+
+}
+.colorBtnsCont
+{
+    display: flex;
+    align-items: center;
+    
+}
+.ColorBtn
+{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(82, 82, 82) ;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.checkMarkVisible
+{
+  opacity: 1;
+}
+.checkMarkHidden
+{
+  opacity: 0;
+}
+
+
+
+.ColorBtn-black
+{
+    border: 2px solid rgb(173, 173, 173) !important;
+    background-color: #242424;
+}
+.ColorBtn-black:hover
+{
+   
+    background-color: #636363 ;
+    cursor: pointer;
+}
+.ColorBtn-black i
+{
+    color: white;
+}
+
+
+
+
+
+
+.ColorBtn-red
+{
+    
+    background-color: #f12a2a;
+}
+.ColorBtn-red:hover
+{
+    
+    background-color: #ac0a0a;
+    cursor: pointer;
+}
+.ColorBtn-red i
+{
+    color: white;
+}
+
+
+
+
+
+
+.ColorBtn-orange
+{
+
+    background-color: #fd7e14;
+}
+.ColorBtn-orange:hover
+{
+
+    background-color: #ce6209;
+    cursor: pointer;
+}
+.ColorBtn-orange i
+{
+    color: white;
+}
+
+
+
+
+
+
+.ColorBtn-yellow
+{
+    background-color: #ffda07;
+}
+.ColorBtn-yellow:hover
+{
+    background-color: #d1b309;
+    cursor: pointer;
+}
+.ColorBtn-yellow i
+{
+    color: white;
+}
+
+
+
+.ColorBtn-green
+{
+
+    background-color: #51e777;
+}
+.ColorBtn-green:hover
+{
+
+    background-color: #21be48;
+    cursor: pointer;
+}
+.ColorBtn-green i
+{
+    color: white;
+}
+
+
+
+.ColorBtn-blue
+{
+
+    background-color: #5168e7;
+}
+.ColorBtn-blue:hover
+{
+
+    background-color: #2c44ca;
+    cursor: pointer;
+}
+.ColorBtn-blue i
+{
+    color: white;
+}
+
+
+
+.ColorBtn-lightblue
+{
+
+    background-color: #51e2e7;
+}
+.ColorBtn-lightblue:hover
+{
+
+    background-color: #2ed1d6;
+    cursor: pointer;
+}
+.ColorBtn-lightblue i
+{
+    color: white;
+}
+
+
+
+.ColorBtn-purple
+{
+
+    background-color: #ab51e7;
+}
+.ColorBtn-purple:hover
+{
+
+    background-color: #8d27d1;
+    cursor: pointer;
+}
+.ColorBtn-purple i
+{
+    color: white;
+}
+.createBtnCont
+{
+    display: flex;
+    justify-content: center;
+}
+.createBtn
+{
+    width: 170px;
+}
+.hhh{opacity: 0;}
+
+
+
