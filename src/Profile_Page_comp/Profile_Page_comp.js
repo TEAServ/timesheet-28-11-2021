@@ -179,7 +179,7 @@ var setToStateB = () =>
           'Content-Type': 'application/json'
         },
         data : data
-      };
+      }; 
       
       axios(config)
       .then(function (responsee) {

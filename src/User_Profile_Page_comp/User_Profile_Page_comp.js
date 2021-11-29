@@ -8,8 +8,9 @@ import React from "react";
 import Header_comp from '../Header_comp/Header_comp';
 
 import ProjectCard_comp from '../ProjectCard_comp/ProjectCard_comp';
-
+import {Helmet} from "react-helmet";
 import Task_comp from '../Task_comp/Task_comp';
+import Task_HISTORY_comp from '../Task_HISTORY_comp/Task_HISTORY_comp';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { setHistoryObj, setMatchObj,setUserProjectsData } from '../store/actions';
@@ -24,6 +25,7 @@ import { setHistoryObj, setMatchObj,setUserProjectsData } from '../store/actions
     userPhoto:"",
     departmentsData:[],
     departments:[],
+    taskHistory:""
     
   };
   // constructor(props)
@@ -97,7 +99,7 @@ import { setHistoryObj, setMatchObj,setUserProjectsData } from '../store/actions
     
     var assignUserProjectToStore = () => {this.props.setUserProjectsData(this.state.ProjectsData)}
     var sendProjectsDataToTables = () => {
-      var setToStateA = () => 
+      var setToStateA = () =>  
 {
       this.setState({
       tableA :  < Task_comp id={this.props.state.currentWeeks.current.id} date={this.props.state.currentWeeks.current.start} projects={this.state.userProjectsToModal} userID={this.props.state.user_Data._id} />,
@@ -350,7 +352,76 @@ addNewUser()
  // console.log(username);
  // console.log(password);
 }
+getMAX()
+{
+  var aaa = new Date(this.props.state.currentWeeks.current.start).getMonth()+1
+  var aaaa = "";
+if (aaa < 10) {
+  aaaa = `0${aaa}` ;
+}else
+{
+  aaaa = `${aaa}` ;
+}
 
+return aaaa ;
+}
+max()
+{
+  return `${new Date(this.props.state.currentWeeks.current.start).getFullYear()}-${this.getMAX()}-${new Date(this.props.state.currentWeeks.current.start).getDate()}T00:00`;
+}
+getWeekHistory()
+{
+  var ddd = document.getElementById("meeting-time");
+  var dddd = new Date(ddd.value);
+
+  //console.log(dddd.getMonth()+1);
+  //console.log(new Date(this.props.state.currentWeeks.current.start).toISOString());
+  var resetHistoryTask = () =>
+  {
+  this.setState({taskHistory :  ""})
+  }
+  var updateHistoryTask = (weekID,date) =>
+  {
+  this.setState({taskHistory :  < Task_HISTORY_comp id={weekID} date={date}  userID={this.props.state.user_Data._id} />})
+  }
+
+  var config = {
+    method: 'get',
+    url: 'https://time-sheet-teaserv.herokuapp.com/api/allWeeks?sort=d',
+    headers: { }
+  };
+  
+  axios(config)
+  .then(function (response) {
+    //console.log(response.data);
+   // var datee = new Date(response.data[0].Start_Fri);
+   // console.log(datee.getDate());
+    
+    //{date:`${datee.getDate()}/${(datee.getMonth())+1}/${datee.getFullYear()}`}
+for (let i = 0; i < response.data.length; i++) {
+  var dateee = new Date(response.data[i].Start_Fri);
+  if ((dateee.getDate()) == (dddd.getDate()) && (dateee.getMonth()+1) == (dddd.getMonth()+1) && (dateee.getFullYear()) == (dddd.getFullYear())) {
+
+
+    // console.log(dateee);
+    // console.log(i);
+    resetHistoryTask();
+    updateHistoryTask(response.data[i]._id,response.data[i].Start_Fri);
+    window.scrollTo(0,document.body.scrollHeight);
+
+    break;
+  }
+  
+}
+
+
+
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  
+}
 
 
 
@@ -474,6 +545,18 @@ addNewUser()
      
      {this.state.tableB}
       <br />
+      {this.props.state.userData.DepartmentName == "Admin" ? (
+        <>
+        <h3>history</h3>
+        <input type="datetime-local" id="meeting-time"
+         name="meeting-time" 
+         min="2021-10-22T00:00" max={ this.max()   } />
+         {/* max="2018-06-14T00:00" */}
+        <button type="button" class="btn btn-info" onClick={()=>{this.getWeekHistory()}}>Info</button>
+        {this.state.taskHistory}
+        
+        </>
+      ):("")}
 </div>
 
 
@@ -492,8 +575,8 @@ export default connect(mapStateToProps , {setHistoryObj, setMatchObj,setUserProj
 
 
 
-// //------------------------------------
-// //-------------------------------------------------
+// //------------------------------------((dateee.getDate()) == "5" && (dateee.getMonth()+1) == "11" && (dateee.getFullYear()) == "2021") {
+// //-------------------------------------------------this.props.state.currentWeeks.current.start
 // import './Header_comp.css';
 // //import ToDoElement_comp from '../ToDoElementt_comp/ToDoElement_comp';
 // import ReactDOM from "react-dom";
